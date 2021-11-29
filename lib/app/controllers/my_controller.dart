@@ -12,13 +12,11 @@ class MyController extends GetxController {
 
     Get.updateLocale(locale);
     getStorage.write(MyKey.language, value);
-    Get.back();
   }
 
   void changeTheme(ThemeMode mode, bool value) {
     Get.changeThemeMode(mode);
 
     getStorage.write(MyKey.darkMode, value);
-    Get.back();
   }
 }

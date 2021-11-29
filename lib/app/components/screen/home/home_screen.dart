@@ -4,7 +4,7 @@ import 'package:get_storage/get_storage.dart';
 import 'package:getx_repository/app/components/widgets/drawer/mydrawer.dart';
 import 'package:getx_repository/app/controllers/my_controller.dart';
 import 'package:getx_repository/app/utills/constants/key/mykey.dart';
-import 'package:getx_repository/app/utills/constants/translations/translations_constants.dart';
+import 'package:getx_repository/app/utills/constants/translations/t.dart';
 
 enum ThemeBrightness { Light, Dark }
 
@@ -42,7 +42,7 @@ class _HomeScreenState extends State<HomeScreen> {
           ),
         ),
         body: Center(
-          child: Text(Trconts.helloWorld.tr),
+          child: Text(T.helloWorld.tr),
         ),
         drawer: MyDrawer(
           widget: Column(
@@ -61,14 +61,14 @@ class _HomeScreenState extends State<HomeScreen> {
         ListTile(
           leading: Icon(Icons.language),
           title: Text(
-            Trconts.changeLanguage.tr,
+            T.changeLanguage.tr,
           ),
           onTap: () {
             showDialog(
                 context: context,
                 builder: (context) => AlertDialog(
                       title: Text(
-                        Trconts.changeLanguage.tr,
+                        T.changeLanguage.tr,
                       ),
                       content: Column(
                         mainAxisSize: MainAxisSize.min,
@@ -109,14 +109,14 @@ class _HomeScreenState extends State<HomeScreen> {
             Icons.dark_mode,
           ),
           title: Text(
-            Trconts.changeTheme.tr,
+            T.changeTheme.tr,
           ),
           onTap: () {
             showDialog(
                 context: context,
                 builder: (context) => AlertDialog(
                       title: Text(
-                        Trconts.changeTheme.tr,
+                        T.changeTheme.tr,
                       ),
                       content: Column(
                         mainAxisSize: MainAxisSize.min,
