@@ -4,12 +4,12 @@ class MyTranslation extends Translations {
   @override
   Map<String, Map<String, String>> get keys => {
         'en': {
-          'helloWord': "Hello Word",
+          'helloWorld': 'Hello World',
           'changeTheme': 'Change Theme',
           'changeLanguage': 'Change Language'
         },
         'id': {
-          'helloWord': "Hallo Dunia",
+          'helloWorld': 'Hallo Dunia',
           'changeTheme': 'Ganti Tema',
           'changeLanguage': 'Ganti Bahasa'
         }

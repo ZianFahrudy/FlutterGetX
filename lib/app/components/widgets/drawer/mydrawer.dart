@@ -17,7 +17,7 @@ class MyDrawer extends StatelessWidget {
                 child: ClipRRect(
                   borderRadius: BorderRadius.circular(40),
                   child: Image.network(
-                    "https://randomuser.me/api/portraits/med/men/75.jpg",
+                    "https://randomuser.me/api/portraits/med/men/70.jpg",
                   ),
                 ),
               ),

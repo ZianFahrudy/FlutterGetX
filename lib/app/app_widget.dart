@@ -23,7 +23,7 @@ class _AppWidgetState extends State<AppWidget> {
 
   @override
   Widget build(BuildContext context) {
-    bool isDark = getStorage.read("darkMode") ?? false;
+    bool isDarkMode = getStorage.read(MyKey.darkMode) ?? false;
     String code = getStorage.read(MyKey.language) ?? "en";
 
     return GetMaterialApp(
@@ -31,7 +31,7 @@ class _AppWidgetState extends State<AppWidget> {
       locale: code == "en" ? Locale("en") : Locale("id"),
       theme: ThemeData(primaryColor: Colors.green),
       darkTheme: ThemeData.dark(),
-      themeMode: isDark ? ThemeMode.dark : ThemeMode.light,
+      themeMode: isDarkMode ? ThemeMode.dark : ThemeMode.light,
       home: HomeScreen(),
     );
   }
